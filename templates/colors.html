@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Identifier</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <div class="container">
+      <h1> Color Extractor</h1>
+      <div class="row custom_layout">
+          <div class="col">
+            <img src="{{url_for('static', filename=file)}}" alt="input_image" height=480px width=480px class="input_img"/>
+            <h3>Uploaded Image</h3>
+          </div>
+          <div class="col">
+              <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Colors</th>
+                    <th scope="col">HEX code</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td bgcolor="{{ colors[0] }}"></td>
+                    <td>{{ colors[0] }}</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td bgcolor="{{ colors[1] }}"></td>
+                    <td>{{ colors[1] }}</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td bgcolor="{{ colors[2] }}"></td>
+                    <td>{{ colors[2] }}</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td bgcolor="{{ colors[3] }}"></td>
+                    <td>{{ colors[3] }}</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td bgcolor="{{ colors[4] }}"></td>
+                    <td>{{ colors[4] }}</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td bgcolor="{{ colors[5] }}"></td>
+                    <td>{{ colors[5] }}</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td bgcolor="{{ colors[6] }}"></td>
+                    <td>{{ colors[6] }}</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td bgcolor="{{ colors[7] }}"></td>
+                    <td>{{ colors[7] }}</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td bgcolor="{{ colors[8] }}"></td>
+                    <td>{{ colors[8] }}</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td bgcolor="{{ colors[9] }}"></td>
+                    <td>{{ colors[9] }}</td>
+                </tr>
+                </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
